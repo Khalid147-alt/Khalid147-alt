@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @Khalid147-alt
 - 👀 I’m interested in Artificial intelligence
-- 🌱 I’m currently learning typescript
+- 🌱 I’m currently learning Next.js
 - 💞️ I’m looking to collaborate on an projrct
 - 📫 How to reach me by gmail | khalidunar103@gmail.com|
 - 😄 Pronouns: ...
