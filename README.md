@@ -23,7 +23,7 @@ DevOps:     Docker, Kubernetes, Git
 ## 💼 Open for Work
 Currently taking on 2-3 projects. Timeline: 5-10 days per project.
 
-📧 khalidunar103@gmail.com | 🔗 [Portfolio](https://www.notion.so/Khalid-Hussain-304cafa1eee2809db73ec69856124254?source=copy_link)
+📧 sindhikhalid126@gmail.com | 🔗 [Portfolio](https://www.notion.so/Khalid-Hussain-304cafa1eee2809db73ec69856124254?source=copy_link)
 
 ---
 
