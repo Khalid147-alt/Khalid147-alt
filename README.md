@@ -44,7 +44,7 @@ Built to solve a real problem in my own shared flat. Handles multi-member expens
 **Stack:** React / Vite · TypeScript · Node.js / Express · PostgreSQL · Prisma ORM · JWT Auth · Web Push API  
 **Highlights:** Debt simplification algorithm (minimum transactions), PWA with offline support, push notifications
 
-🔗 [Live Demo](#) · [Repo](https://github.com/Khalid147-alt/flatsplit)
+🔗 [Live Demo](https://flatsplit-two.vercel.app/) · [Repo](https://github.com/Khalid147-alt/flatsplit)
 
 ---
 
@@ -64,6 +64,7 @@ A culturally grounded AI project that generates poetry in the voice and style of
 > Intelligent monitoring and threat detection
 
 **Stack:** TypeScript  
+live(https://cogni-guard-gxmd-gu5b28euj-khalid-hussains-projects-3458aa41.vercel.app/)
 🔗 [Repo](https://github.com/Khalid147-alt/Cogni-Guard)
 
 ---
@@ -76,7 +77,7 @@ End-to-end marketplace with product listings, cart, authentication, and Sanity C
 **Stack:** Next.js · TypeScript · Sanity CMS · Tailwind CSS · Vercel  
 **Highlights:** SSR + SSG, API integration, performance tested with Lighthouse
 
-🔗 [Live Demo](https://hackathon-lake-nine.vercel.app) · [Repo](https://github.com/Khalid147-alt/Hackathon)
+🔗 [Live Demo](https://hackathon-khalid-hussain-nine.vercel.app/) · [Repo](https://github.com/Khalid147-alt/Hackathon)
 
 ---
 
