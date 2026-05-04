@@ -1,85 +1,39 @@
 # Khalid Hussain
 
-**Full-Stack Agentic AI Developer** — building AI systems that solve real problems.
+**Agentic AI Systems Developer** — Karachi, Pakistan
 
-Based in Karachi, Pakistan. Currently focused on agentic AI, RAG pipelines, and full-stack product development.
+I build production-shaped agentic AI systems: routed multi-agent graphs, RAG pipelines with grounded citations, MCP-exposed tools, and the full-stack apps that put them in front of real users.
 
----
-
-## What I Build
-
-I work the full stack of AI product development — from LLM orchestration and retrieval systems to production-ready web apps with real users.
-
-**AI & Agentic Systems**
-- RAG pipelines with semantic retrieval, document chunking, and source citation
-- Multi-agent workflows using LangChain, LangGraph, and CrewAI
-- MCP (Model Context Protocol) integrations for tool-augmented agents
-- LLM-powered APIs using FastAPI and the Anthropic/OpenAI SDKs
-
-**Full-Stack Development**
-- React / Next.js frontends with TypeScript
-- Node.js / Express and FastAPI backends
-- PostgreSQL with Prisma ORM
-- JWT authentication, REST APIs, real-time features
+**Core stack:** LangGraph · FastAPI · MCP · RAG (ChromaDB + sentence-transformers) · React · PostgreSQL
 
 ---
 
-## Projects
-
-### DocMind — AI Document Q&A Agent
-> RAG-powered document intelligence system
-
-Built a retrieval-augmented generation pipeline that lets users query their documents in natural language and get cited answers.
-
-**Stack:** Python · LangChain · ChromaDB · HuggingFace Embeddings (`all-MiniLM-L6-v2`) · Claude API · FastAPI  
-**Highlights:** MMR retrieval for diversity, source-citing responses, PDF ingestion via PyPDFLoader
-
----
-
-### FlatSplit — Expense Splitting PWA
-> Full-stack PWA for shared household expenses · [Live Demo](https://flatsplit-two.vercel.app/) · [Repo](https://github.com/Khalid147-alt/flatsplit)
-
-Built to solve a real problem in my own shared flat. Multi-tenant expense tracking with approval-based flows, AI receipt scanning, and monthly settlement receipts.
-
-**Stack:** Next.js 16 · React 19 · TypeScript · PostgreSQL · Prisma ORM · JWT Auth · Upstash Redis · Web Push API  
-**Highlights:** AI receipt scanning (Claude API + Tesseract.js OCR + Gemini), PWA with offline support, push notifications, JazzCash/Easypaisa payment support
-
----
+## Pinned Projects
 
 ### Customer Support Agents — Agentic Support System
-> LangGraph multi-agent customer support with real-time streaming · [Repo](https://github.com/Khalid147-alt/customer-support-agents)
+> LangGraph router · MCP tools · RAG · streaming SSE · [Repo](https://github.com/Khalid147-alt/customer-support-agents)
 
-Production-shaped agentic support system. Router agent classifies intent → RAG / tool-use / escalate → respond. Streams live via LangGraph → FastAPI SSE → React.
+Production-shaped support agent. A `flash-lite` router classifies each turn into `rag` / `tool` / `escalate` before any expensive work runs. Tools (order lookup, product info, ticket creator) are exposed both **in-process** and over **MCP** (`FastMCP`) for protocol correctness. End-to-end token streaming via LangGraph `astream_events v2` → FastAPI SSE → React `ReadableStream`. Auto-escalation creates `TKT-YYYY-NNNN` tickets in Postgres.
 
-**Stack:** FastAPI · LangGraph · MCP (FastMCP) · ChromaDB · PostgreSQL · React/Vite · Docker · Gemini 2.5  
-**Highlights:** MCP tool exposure (order lookup, ticket creator), RAG with diversity re-rank, auto-escalation to `TKT-YYYY-NNNN` in Postgres
-
----
-
-### Jaun-Elia-GPT — Urdu Poetry AI
-> Language model fine-tuned on the poetry of Jaun Elia · [Repo](https://github.com/Khalid147-alt/Jaun-Elia-GPT)
-
-A culturally grounded AI project that generates poetry in the voice and style of Jaun Elia — one of Urdu literature's most distinctive modern poets.
-
-**Stack:** Python · LangChain · Claude / GPT-4  
-**Highlights:** Culturally specific prompt engineering, Urdu language handling, creative generation evaluation
+**Stack:** FastAPI · LangGraph · MCP · ChromaDB · PostgreSQL · React/Vite · Docker · Gemini 2.5
 
 ---
 
-### Cogni-Guard — AI Security System
-> Intelligent monitoring and threat detection · [Live](https://cogni-guard-gxmd-gu5b28euj-khalid-hussains-projects-3458aa41.vercel.app/) · [Repo](https://github.com/Khalid147-alt/Cogni-Guard)
+### FlatSplit — Multi-Tenant Expense PWA
+> Next.js 16 · AI receipt scanning · approval flows · [Live](https://flatsplit-two.vercel.app/) · [Repo](https://github.com/Khalid147-alt/flatsplit)
 
-**Stack:** TypeScript · Next.js · Claude API
+Built to solve a real problem in my own shared flat. Multi-tenant houses with admin approval flows for expenses, contribution pools, rent/WiFi/water tracking, and AI-powered receipt scanning that auto-fills expense data. Security-hardened: rate limiting, IDOR protection, CSP, bcrypt + JWT in httpOnly cookies.
+
+**Stack:** Next.js 16 · React 19 · TypeScript · Prisma · PostgreSQL · Upstash Redis · Claude API · Tesseract.js · Web Push
 
 ---
 
-### Furniwise — E-commerce Marketplace
-> Full-stack marketplace built during a 6-day hackathon · [Live Demo](https://hackathon-khalid-hussain-nine.vercel.app/) · [Repo](https://github.com/Khalid147-alt/Marketplace-Furniwise)
+### DocMind — RAG Document Intelligence *(in development)*
+> Cited document Q&A over user-uploaded PDFs
 
-End-to-end marketplace with product listings, cart, authentication, and Sanity CMS integration. Deployed and production-tested.
+Retrieval-augmented Q&A pipeline with MMR retrieval for diversity and source-cited responses, so users see exactly which chunks the model leaned on.
 
-**Stack:** Next.js · Sanity CMS · Tailwind CSS · Vercel  
-**Highlights:** SSR + SSG, API integration, performance tested with Lighthouse
+**Stack:** Python · LangChain · ChromaDB · HuggingFace `all-MiniLM-L6-v2` · Claude API · FastAPI
 
 ---
 
@@ -87,42 +41,25 @@ End-to-end marketplace with product listings, cart, authentication, and Sanity C
 
 | Area | Technologies |
 |------|-------------|
-| AI / ML | LangChain · LangGraph · CrewAI · MCP · RAG · ChromaDB · HuggingFace Embeddings · Claude API · OpenAI |
-| Backend | Python · FastAPI · Node.js · Express · PostgreSQL · Prisma ORM · JWT · REST |
-| Frontend | React · Next.js · TypeScript · Tailwind CSS · Vite |
-| DevOps | Docker · Git · Vercel · Railway · LangSmith (tracing) · GitHub Actions |
-
----
-
-## GitHub Stats
-
-<div align="center">
-
-![Khalid's GitHub Stats](https://github-readme-stats.vercel.app/api?username=Khalid147-alt&show_icons=true&theme=default&hide_border=true&count_private=true&include_all_commits=true)
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Khalid147-alt&layout=compact&theme=default&hide_border=true&langs_count=8)
-
-![GitHub Streak](https://streak-stats.demolab.com?user=Khalid147-alt&theme=default&hide_border=true&date_format=M%20j%5B%2C%20Y%5D)
-
-</div>
+| Agentic AI | LangGraph · LangChain · MCP (FastMCP) · CrewAI · structured-output routing · streaming via SSE |
+| RAG | ChromaDB · sentence-transformers · MMR / diversity re-rank · relevance-thresholded citations |
+| Backend | FastAPI · Node.js · PostgreSQL · Prisma · asyncpg · JWT |
+| Frontend | React · Next.js · TypeScript · Tailwind · Vite |
+| LLMs | Anthropic Claude · Google Gemini · OpenAI |
+| Infra | Docker · Vercel · Railway · Upstash Redis |
 
 ---
 
 ## Currently Learning
 
-- Advanced agentic patterns: multi-agent coordination, tool use, memory systems
+- Multi-agent coordination patterns and shared memory
 - A2A (Agent-to-Agent) Protocol
-- Production deployment and observability for LLM applications
+- LLM observability and production tracing (LangSmith)
 
 ---
 
 ## Connect
 
-📧 [sindhikhalid126@gmail.com](mailto:sindhikhalid126@gmail.com)  
-💼 [LinkedIn](https://www.linkedin.com/in/khalid-hussain-55714727a)  
-🐦 [@KhalidUnar27322](https://x.com/KhalidUnar27322)  
-📋 [Notion Portfolio](https://www.notion.so/)
+📧 [sindhikhalid126@gmail.com](mailto:sindhikhalid126@gmail.com) · 💼 [LinkedIn](https://www.linkedin.com/in/khalid-hussain-55714727a) · 🐦 [@KhalidUnar27322](https://x.com/KhalidUnar27322)
 
----
-
-*Open to freelance projects and remote opportunities in agentic AI and full-stack development.*
+*Open to freelance and remote roles in agentic AI and full-stack development.*
